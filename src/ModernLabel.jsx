@@ -157,7 +157,7 @@ const Label = ({ data }) => {
             {toAddress}
           </div>
 
-          {/* PINCODE HIGHLIGHT BOX */}
+          
           
         </div>
 
@@ -176,9 +176,11 @@ const Label = ({ data }) => {
             <h4 style={styles.fromBrand}>SM FOODS</h4>
             
             <div style={styles.contactItem}>
-              <div style={styles.addressIcon}>
-                <svg viewBox="0 0 24 24" style={styles.contactSvg}><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z"/></svg>
-              </div>
+               <div style={styles.contactIcon}>
+    <svg viewBox="0 0 24 24" style={styles.contactSvg}>
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+    </svg>
+  </div>
               <span>1/145 Indira Nagar,
 1st Street, Santhosapuram,
 Chennai, TN - 600073</span>
@@ -470,7 +472,16 @@ thankYouSubText: {
     alignItems: "center",
     marginRight: "8px",
   },
-
+addressIcon: {
+  width: "22px",
+  height: "22px",
+  backgroundColor: "#000000",
+  borderRadius: "50%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  marginRight: "8px",
+},
   contactSvg: {
     width: "10px",
     height: "10px",
