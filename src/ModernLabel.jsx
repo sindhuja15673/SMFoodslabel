@@ -114,8 +114,8 @@ const Label = ({ data }) => {
   const recipientName = data?.recipientName || "Mallik Kotikalapudi";
   const toAddress = data?.toAddress || 
     `Mallik Dev Kotikalapudi c/o Chetan Shanmukha\nNilayam, Fisrt floor , Hno 12-155/7/27/11/4.\nHotel Red chilli backside. SRPT Road,\nKODAD Muncipality-508206..\nSuryapet District. Telangana.\n\nshanmu chetan nilayam`;
-  const pincode = data?.pincode || "508206";
-  const cityState = data?.cityState || "KODAD, TELANGANA";
+  // const pincode = data?.pincode || "508206";
+  // const cityState = data?.cityState || "KODAD, TELANGANA";
 
   return (
     <div id="divs" style={styles.wrapper}>
