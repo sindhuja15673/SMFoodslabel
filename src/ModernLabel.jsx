@@ -158,16 +158,7 @@ const Label = ({ data }) => {
           </div>
 
           {/* PINCODE HIGHLIGHT BOX */}
-          <div style={styles.pincodeBox}>
-            {/* Custom SVG Location Pin */}
-            <svg style={styles.pinIcon} viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-            <div style={styles.pincodeTextContainer}>
-              <h3 style={styles.pincodeDigits}>{pincode}</h3>
-              <p style={styles.pincodeSubtext}>{cityState}<br />INDIA</p>
-            </div>
-          </div>
+          
         </div>
 
         {/* LOWER DIVIDER */}
@@ -184,6 +175,14 @@ const Label = ({ data }) => {
             <span style={styles.fromLabel}>From:</span>
             <h4 style={styles.fromBrand}>SM FOODS</h4>
             
+            <div style={styles.contactItem}>
+              <div style={styles.addressIcon}>
+                <svg viewBox="0 0 24 24" style={styles.contactSvg}><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z"/></svg>
+              </div>
+              <span>1/145 Indira Nagar,
+1st Street, Santhosapuram,
+Chennai, TN - 600073</span>
+            </div>
             {/* Phone */}
             <div style={styles.contactItem}>
               <div style={styles.contactIcon}>
@@ -201,7 +200,15 @@ const Label = ({ data }) => {
             </div>
           </div>
         </div>
+<div style={styles.thankYouSection}>
+  <p style={styles.thankYouText}>
+    ❤️ Thank you for choosing <strong>SM FOODS</strong>!
+  </p>
 
+  <p style={styles.thankYouSubText}>
+    We appreciate your trust and wish you a delightful experience with our products.
+  </p>
+</div>
       </div>
     </div>
   );
@@ -229,7 +236,25 @@ const styles = {
     boxSizing: "border-box",
     borderRadius: "10px",
   },
+thankYouSection: {
+  borderTop: "2px dashed #000",
+  marginTop: "15px",
+  paddingTop: "12px",
+  textAlign: "center",
+},
 
+thankYouText: {
+  margin: 0,
+  fontSize: "16px",
+  fontWeight: "700",
+  color: "#000",
+},
+thankYouSubText: {
+  marginTop: "6px",
+  fontSize: "12px",
+  color: "#666",
+  lineHeight: "1.5",
+},
   /* Header Styles */
   header: {
     textAlign: "center",
